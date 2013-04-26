@@ -12,14 +12,14 @@
 	<ul class="build no-bullet">
 		<li>
 <pre class="structure">
-&lt;html> &lt;/html></pre>
+&lt;html> &lt;/html></code></pre>
 		</li>
 		<li>
-<pre><a> Anchor Tag </a> </pre>
+<pre><code class="language-markup"><a> Anchor Tag </a> </code></pre>
 		</li>
 		<li>
 		Adding an attribute:
-<pre class="structure">&lt;a <strong>href="http://www.hugeinc.com"</strong>> Anchor Tag &lt;/a> </pre>
+<pre class="structure">&lt;a <strong>href="http://www.hugeinc.com"</strong>> Anchor Tag &lt;/a> </code></pre>
 		</li>
 	</ul>
 </div>
@@ -29,22 +29,22 @@
 	<ul class="build no-bullet">
 		<li>
 <pre class="structure">
-&lt;a <strong>href="http://www.hugeinc.com" target="_blank"</strong>>  &lt;/a></pre>
+&lt;a <strong>href="http://www.hugeinc.com" target="_blank"</strong>>  &lt;/a></code></pre>
 		</li>
 		<li>
 <pre class="structure">
 &lt;div <strong>class="menu-sides"</strong>>  &lt;/div>
-</pre>
+</code></pre>
 		</li>
 		<li>
 <pre class="structure">
 &lt;section <strong>id="menu-drinks" class="menu clearfix"</strong>>  &lt;/section>
-</pre>
+</code></pre>
 		</li>
 		<li>
 <pre class="structure">
 &lt;img <strong>src="images/coyboy.jpg" alt="Cowboy" width="202" height="201"</strong> />
-</pre>
+</code></pre>
 		</li>
 		
 	</ul>
@@ -77,7 +77,7 @@
     &lt;body>
         &lt;!-- visible part of the site goes here -->
     &lt;/body>
-&lt;/html></pre>
+&lt;/html></code></pre>
 		</li>
 	</ul>
 	<small class="demo magenta">( demo )</small>
@@ -92,7 +92,7 @@
 		HTML5 Doctype:
 <pre class="structure">
 &lt;!doctype html>
-</pre>
+</code></pre>
 		</li>
 	</ul>
 </div>
@@ -114,7 +114,7 @@
 	<ul class="build no-bullet">
 		<li>
 		Working within the <strong>&lt;body> &lt;/body></strong> tags
-<pre>
+<pre><code class="language-markup">
 <nav>
     <ul>
         <li><a href="#">About Holden's</a></li>
@@ -124,14 +124,14 @@
         <li><a href="#">Lorem Ipsum</a></li>
     </ul>
 </nav>
-</pre>
+</code></pre>
 		</li>
 		<li>
-<pre>
+<pre><code class="language-markup">
 <header>
     <h1><span>Holden's Hog Tie</span></h1>
 </header>
-</pre>
+</code></pre>
 		</li>
 	</ul>
 
@@ -143,7 +143,7 @@
 	<h4>Even more tags!</h4>
 	<ul class="no-bullet">
 		<li>
-<pre>
+<pre><code class="language-markup">
 <footer class="clearfix">
     <nav>
         <p>Holden's Hog Tie, 50 E Cesar Chavez St, Austin, TX (500) 867-5309</p>
@@ -155,7 +155,7 @@
             <li><a href="#">Lorem Ipsum</a></li>
         </ul>
     </nav>
-</footer></pre>
+</footer></code></pre>
 		</li>
 	</ul>	
 <?php include('demo_inline.php'); ?>
@@ -168,11 +168,11 @@
 	<ul class="build">
 		<li>
 		Headings
-<pre class=""><h2>"No pork butts about it; The Best BBQ in Austin."<span>-Your Mom</span></h2></pre>
+<pre class=""><h2>"No pork butts about it; The Best BBQ in Austin."<span>-Your Mom</span></h2></code></pre>
 		</li>
 		<li>
 		Self closing tags
-<pre><img src="images/cowboy.jpg" alt="Cowboy" width="202" height="201"></pre>
+<pre><code class="language-markup"><img src="images/cowboy.jpg" alt="Cowboy" width="202" height="201"></code></pre>
 		</li>
 	</ul>
 </div>
