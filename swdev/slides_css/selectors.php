@@ -129,6 +129,17 @@ p[title~="chicken"] {
 	<p title="waffles chicken">This text will be blue</p>
 </div>
 
+<div class="slide">
+	<h4>Back to classes and ids.</h4>
+	<p>Any class or id is an attribute.  You can also target these such as:</p>
+<pre>
+div[class="blue"] {
+	color: blue;
+}
+</pre>
+	<p># and . are shorthands for these commonly used attributes.</p>
+</div>
+
 
 <div class="slide">
 	<h4>Descendant - <strong>Ancestor1 [Ancestor2...] Target</strong>.</h4>
