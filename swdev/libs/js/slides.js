@@ -604,7 +604,7 @@
     addGeneralStyle();
     
     
-    addPrettify();
+//    addPrettify();
     addEventListeners();
   
     updateSlides();
