@@ -31,14 +31,18 @@
     <ul class="build no-bullet">
         <li>
 <pre class="structure">
-&lt;html> &lt;/html></code></pre>
+<code class="language-markup">
+&lt;html&gt; &lt;/html&gt;
+</code></pre>
         </li>
         <li>
-<pre><code class="language-markup"><a> Anchor Tag </a> </code></pre>
+<pre><code class="language-markup">
+&lt;a&gt; Anchor Tag &lt;/a&gt; 
+</code></pre>
         </li>
         <li>
         Adding an attribute:
-<pre class="structure">&lt;a <strong>href="http://www.hugeinc.com"</strong>> Anchor Tag &lt;/a> </code></pre>
+<pre class="structure"><code class="language-markup">&lt;a <strong>href="http://www.hugeinc.com"</strong>&gt; Anchor Tag &lt;/a&gt; </code></pre>
         </li>
     </ul>
 </div>
@@ -68,19 +72,6 @@
         
     </ul>
 </div>
-
-<div class="slide">
-    <h4>Setting up your environment</h4>
-    <ul class="build">
-        <li>Create a new Folder that will contain your project. Call it <strong>holdens_web</strong></li>
-        <li>Copy the folder called <strong>css</strong> into your holdens_web folder</li>
-        <li>Copy the folder called <strong>image</strong> into your holdens_web folder</li>
-        <li>Sublime Text / Notepad ++</li>
-        <li>File -> New File</li>
-        <li>Save as <strong>index.html</strong></li>
-    </ul>
-</div>
-
 
 <div class="slide">
     <h4>What every page needs</h4>
@@ -127,76 +118,6 @@
 </div>
 
 
-
-<div class="slide">
-    <h4>More tags</h4>
-    <ul class="build no-bullet">
-        <li>
-        Working within the <strong>&lt;body> &lt;/body></strong> tags
-<pre><code class="language-markup">
-<nav>
-    <ul>
-        <li><a href="#">About Holden's</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-    </ul>
-</nav>
-</code></pre>
-        </li>
-        <li>
-<pre><code class="language-markup">
-<header>
-    <h1><span>Holden's Hog Tie</span></h1>
-</header>
-</code></pre>
-        </li>
-    </ul>
-
-<small class="demo magenta">( demo )</small></div>
-
-
-<div class="slide">
-    <h4>Even more tags!</h4>
-    <ul class="no-bullet">
-        <li>
-<pre class="structure"><code class="language-markup">
-<footer class="clearfix">
-    <nav>
-        <p>Holden's Hog Tie, 50 E Cesar Chavez St, Austin, TX (500) 867-5309</p>
-        <ul>
-            <li><a href="#">About Holden's</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
-        </ul>
-    </nav>
-</footer></code></pre>
-        </li>
-    </ul>    
-<small class="demo magenta">( demo )</small></div>
-
-<!--
-
-<div class="slide">
-    <h4>Even more tags!</h4>
-    <ul class="build">
-        <li>
-        Headings
-<pre class=""><h2>"No pork butts about it; The Best BBQ in Austin."<span>-Your Mom</span></h2></code></pre>
-        </li>
-        <li>
-        Self closing tags
-<pre><code class="language-markup"><img src="images/cowboy.jpg" alt="Cowboy" width="202" height="201"></code></pre>
-        </li>
-    </ul>
-</div>
-
-
--->
-        
         <div class="slide black invert section">
     <h1 class="v-center bigger white">Semantic Markup.</h1>
 </div>
@@ -255,50 +176,3 @@
 <div id="advertisment"> </div>
     </pre>
 </div>        
-        <div class="slide section">
-    <h4>Forms</h4>
-
-    <p>
-        Forms are what submits user entered data back to the webserver.
-    </p>
-
-<pre>
-<form>
-    <fieldset>
-        <input type="checkbox">Agree to terms?
-        <input type="text" />
-        <input type="submit" />
-    </fieldset>
-</form>
-</pre>
-
-<form>
-    <fieldset>
-        <input type="checkbox"><span style="font-size: 12px;">Agree to terms?</span><br />
-        <input type="text" />
-        <input type="submit" />
-    </fieldset>
-</form>
-
-
-</div>        
-                <div class="slide section">
-            <h4>Most common form input types</h4>
-            <style type="text/css">
-                .build label {
-                    display: inline-block;
-                    width: 200px;
-                }
-            </style>
-            <ul class="build">
-                <li><label>text</label><input type="text" value="Huge Rocks!" /></li>
-                <li><label>password</label><input type="password" value="secret" /></li>
-                <li><label>radio</label><input type="radio" /></li>
-                <li><label>checkbox</label><input type="checkbox" /></li>
-                <li><label>textarea</label><textarea cols="50"></textarea></li>
-                <li><label>select</label><select><option>Ribs</option><option>Brikset</option><option>Mac & Cheese</option></select></li>
-                <li><label>submit</label><input type="submit" /></li>
-                <li><label>file</label><input type="file" /></li>
-            </ul>
-        </div>        
-        
