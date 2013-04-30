@@ -51,21 +51,21 @@
     <h4>Common Attributes</h4>
     <ul class="build no-bullet">
         <li>
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;a <strong>href="http://www.hugeinc.com" target="_blank"</strong>>  &lt;/a></code></pre>
         </li>
         <li>
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;div <strong>class="menu-sides"</strong>>  &lt;/div>
 </code></pre>
         </li>
         <li>
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;section <strong>id="menu-drinks" class="menu clearfix"</strong>>  &lt;/section>
 </code></pre>
         </li>
         <li>
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;img <strong>src="images/coyboy.jpg" alt="Cowboy" width="202" height="201"</strong> />
 </code></pre>
         </li>
@@ -77,7 +77,7 @@
     <h4>What every page needs</h4>
     <ul class="no-bullet">
         <li>
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;!doctype html>
 &lt;html>
     &lt;head>
@@ -100,7 +100,7 @@
         <li><strong>A Document Type Declaration</strong>, or <strong>DOCTYPE</strong>, is an instruction that tells the browser what kind of document it is rendering.</li>
         <li>
         HTML5 Doctype:
-<pre class="structure">
+<pre class="structure"><code class="language-markup">
 &lt;!doctype html>
 </code></pre>
         </li>
@@ -110,7 +110,7 @@
 <!-- types of tags -->
 <div class="slide">
     <h4>Types of tags</h4>
-    <ul class="">
+    <ul>
         <li>Tags can define the general page structure</li>
         <li>Tags can define sections of a page</li>
         <li>Tags can define elements on a page</li>
@@ -118,7 +118,7 @@
 </div>
 
 
-        <div class="slide black invert section">
+<div class="slide black invert section">
     <h1 class="v-center bigger white">Semantic Markup.</h1>
 </div>
         <div class="slide">
@@ -130,24 +130,15 @@
 
 <pre class="structure">
 <code class="language-markup">
-<h2>Page Subtitle</h2>
-<h1>Page Title</h1>
-<p>Paragraph of text</p>
-<p>Another paragraph of text</p>
+&lt;h1&gt;Page Title&lt;/h1&gt;
+&lt;h2&gt;Page Subtitle&lt;/h2&gt;
+&lt;p&gt;Paragraph of text&lt;/p&gt;
+&lt;p&gt;Another Paragraph of text&lt;/p&gt;
 </code>
 </pre>
 
-<pre>
-<code class="language-markup">
-<h1>Page Title</h1>
-<h2>Page Subtitle</h2>
-<p>Paragraph of text</p>
-<p>Another paragraph of text</p>
-</code>
-</pre>
-
-        </div>        
-        <div class="slide section">
+</div>        
+<div class="slide section">
     <h4>Why is semantic markup important?</h4>
     <p>Think of your website like you would a newspaper</p>
     <p>
@@ -172,7 +163,9 @@
 <div class="slide">
     <h4>Adding Semantics to Structural tags</h4>
     <pre>
-<div class="main-content"></div>
-<div id="advertisment"> </div>
+    <code class="language-markup">
+&lt;div class="main-content"&gt; &lt;/div&gt;
+&lt;div id="advertisment"&gt; &lt;/div&gt;
+	</code>
     </pre>
 </div>        
