@@ -61,7 +61,7 @@ selector {property-name: value;property2: value;}</pre>
 
 
         
-        <div class="slide black section">
+ <div class="slide black section">
     <h1 class="white">Selectors and Properties</h1>
 </div>
 
