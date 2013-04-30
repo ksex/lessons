@@ -19,16 +19,18 @@
     <ul class="build no-bullet">
         <li>
             CSS is generally written like this:
-            <pre>
+<pre><code class="language-css">
 selector {
     property-name: value;
     property2: value;
-}</pre>
+}
+</code></pre>
         </li>
         <li>
             can also be written on a single line:
-            <pre>
-selector {property-name: value;property2: value;}</pre>
+<pre><code class="language-css">
+selector {property-name: value;property2: value;}
+</code></pre>
         </li>
     </ul>
 </div>
@@ -43,24 +45,6 @@ selector {property-name: value;property2: value;}</pre>
     </ul>
 </div>
         
-
-<!-- <div class="slide">
-    <h4>Including CSS - <small>Inline</small></h4>
-    <pre>
-<div style="color: blue;">This text will be blue
-</div>    
-    </pre>
-    <div style="color: blue;">This text will be blue
-    </div>    
-</div> -->
-
-
-
-
-
-
-
-        
  <div class="slide black section">
     <h1 class="white">Selectors and Properties</h1>
 </div>
@@ -71,7 +55,7 @@ selector {property-name: value;property2: value;}</pre>
 
 <div class="slide">
     <h4>Including CSS - <small>Internal</small></h4>
-    <pre class="structure">
+    <pre class="structure"><code class="language-css">
 &lt;head>
      ...
      &lt;style type="text/css">
@@ -82,7 +66,7 @@ selector {property-name: value;property2: value;}</pre>
           }
      &lt;/style>
 &lt;/head>
- </pre>
+ </code></pre>
 <small class="demo magenta">( demo )</small></div>
 
 <div class="slide black invert">
@@ -92,7 +76,7 @@ selector {property-name: value;property2: value;}</pre>
 <div class="slide">
     <h4>Tag</h4>
     <p>The tag selector is used to apply styles to certain tags</p>
-    <pre>
+    <pre><code class="language-css">
 h2 {
     color: red;
 }
@@ -103,26 +87,26 @@ h4 {
     <h4>This will be blue</h4>
     <h2>This will also be red</h2>
     <h4>This will also be blue</h4>
-</pre>
+</code></pre>
     <p>The above css would make the text of every h2 tag red and every h4 tag blue </p>
 </div>
 
 <div class="slide">
     <h4>Tag</h4>
-    <pre>
+    <pre><code class="language-css">
 h2 {
     color: red;
 }
 h4 {
     color: blue;
 }
-    </pre>
+    </code></pre>
     <small class="demo magenta">( demo )</small></div>
 
 <div class="slide">
     <h4>ID - <strong>#</strong></h4>
     <p>Any html tag, can be given a unique id attribute. The id selector,<strong>#</strong>, is used to target an element with a specified id</p>
-    <pre>
+    <pre><code class="language-css">
 #main-content {
     color: magenta;
 }
@@ -132,13 +116,13 @@ h4 {
 
 <div id="main-content">This text will be magenta</div>
 <h1 id="terms">This text will be green</h1>
-    </pre>
+    </code></pre>
     <small class="demo magenta">( demo )</small></div>
 
 <div class="slide">
     <h4>Class - <strong>.</strong></h4>
     <p>Any html tag can be given a class attribute with multiple values non-unique values. The class selector,<span style="font-size: 40px;"><strong>.</strong></span>,is used to target all elements with a specified class</p>
-    <pre>
+    <pre><code class="language-css">
 .sub-header {
      font-size: 29px;
 }
@@ -151,51 +135,54 @@ h4 {
         <h2 class="sub-header">This text will be big</h2>
         <p class="red-text">This text will be red</p>
         <p class="red-text big-text">This text will be big AND red</p>
-    </pre>
+    </code></pre>
 <small class="demo magenta">( demo )</small></div>
 
 <div class="slide">
-    <h4>Attribute - <tag><strong>[attribute]</strong></h4>
+    <h4>Attribute - <strong>[attribute]</strong></h4>
     <p>Selects an html tag that has the attribute</p>
-    <pre>
+    <pre><code class="language-css">
 p[title] {
     color: blue
 }
     <p>This text will be black</p>
     <p title="brisket">This text will be blue</p>
+</code></pre>
 </div>
 <div class="slide">
-    <h4>Attribute equals- <tag><strong>[attribute="value"]</strong></h4>
+    <h4>Attribute equals- <strong>[attribute="value"]</strong></h4>
     <p>Selects an html tag that has an attribute with the specified value</p>
-    <pre>
+    <pre><code class="language-css">
 p[title="waffles"] {
     color: blue
 }
     <p>This text will be black</p>
     <p title="brisket">This text will be black</p>
     <p title="waffles">This text will be blue</p>
+</code></pre>
 </div>
 
 <div class="slide">
     <h4>Attribute value list contains- <tag><strong>[attribute~="value"]</strong></h4>
     <p>Selects an html tag that has an attribute whose value is the specified value or is a space delimited list containing that value </p>
-    <pre>
+    <pre><code class="language-css">
 p[title~="chicken"] {
     color: blue
 }
     <p>This text will be black</p>
     <p title="waffles">This text will be black</p>
     <p title="waffles chicken">This text will be blue</p>
+</code></pre>
 </div>
 
 <div class="slide">
     <h4>Back to classes and ids.</h4>
     <p>Any class or id is an attribute.  You can also target these such as:</p>
-<pre>
+<pre><code class="language-css">
 div[class="blue"] {
     color: blue;
 }
-</pre>
+</code></pre>
     <p># and . are shorthands for these commonly used attributes.</p>
 </div>
 
@@ -204,19 +191,19 @@ div[class="blue"] {
     <h4>Descendant - <strong>Ancestor1 [Ancestor2...] Target</strong>.</h4>
     <p>Using a descendant is actually using multiple selectors where the last selector, the element to be styled, is
         a descendant of all the selectors before it.</p>
-    <pre>
+    <pre><code class="language-css">
 #address p .city {
     color: silver;
 }
 .pork li {
     color: salmon;
 }
-    </pre>
+    </code></pre>
 </div>
 
 <div class="slide">
     <h4>Descendant cont.</h4>
-    <pre>
+    <pre><code class="language-css">
 #address p .city {
     color: silver;
 }
@@ -228,11 +215,11 @@ div[class="blue"] {
             This text will be black
     </p>
 </div>
-    </pre>
+    </code></pre>
 </div>
 <div class="slide">
     <h4>Descendant cont.</h4>
-    <pre>
+    <pre><code class="language-css">
 .pork li {
     color: salmon;
 }
@@ -246,7 +233,7 @@ div[class="blue"] {
         <li>This text will be black</li>
     </ul>
 </div>
-    </pre>
+    </code></pre>
 </div>
 <!-- <div class="slide">
     <h4>Child - <strong> > </strong></h4>
@@ -300,43 +287,19 @@ div[class="blue"] {
 
 <div class="slide">
   <h4>Including CSS - <small>External/Linked</small></h4>
-  <pre class="structure">
+  <pre class="structure"><code class="language-markup">
 &lt;head>
     ...
     &lt;link rel="stylesheet" type="text/css" href="css/reset.css" />
     &lt;link rel="stylesheet" type="text/css" href="css/global.css" />
     ...
 &lt;/head>
-</pre>
-  <ul class="build">
-    <li>Create a new file save it as <strong>global.css</strong>, place it inside the css folder</li>
-    <li>Copy your css rule from your internal css into global.css</li>
-  </ul>
-<small class="demo magenta">( demo )</small></div>
-
-<div class="slide">
-    <h4>CSS properties</h4>
-    <ul class="build no-bullet">
-        <li>Use CSS to modify properties of HTML elements</li>
-        <li>
-<pre class="structure">
-nav {
-  <strong>text-decoration</strong>: underline;
-  <strong>height</strong>: 40px;
-  <strong>margin-top</strong>: 20px;
-  <strong>margin-right</strong>: auto;
-  <strong>margin-bottom</strong>: 70px;
-  <strong>margin-left</strong>: auto;
-}
-</pre>
-        </li>
-    </ul>
+</code></pre>
 </div>
-
 
 <div class="slide">
   <h4> CSS - <small>properties</small></h4>
-<pre>
+<pre><code class="language-css">
 header {
     background-image: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
@@ -344,15 +307,15 @@ header {
     width: 1400px;
     height: 777px;
     margin: 0px auto;
-}</pre>
+}</code></pre>
   <ul class="build no-bullet">
     <li style="list-style-type:none !important;"> 
-<pre class="build">
+<pre class="build"><code class="language-css">
 header {
     background: url('../images/header-bg.jpg') no-repeat top left;
     width: 1400px;
     height: 777px;
-}</pre>
+}</code></pre>
     </li>
   </ul>
 <small class="demo magenta">( demo )</small></div>
@@ -363,14 +326,14 @@ header {
 
 
 <div class="slide">
-<pre>
+<pre><code class="language-css">
 footer {
     color: #d56161;
     background: #bc0505;
     padding: 15px 0;
     font-size: 14px;
 }
-</pre>
+</code></pre>
 </div>        
         <div class="slide section">
     <h4>CSS - float</h4>
@@ -398,7 +361,7 @@ footer {
     <p>Each element in an HTML document is part of a tree, and every element except the initial <html> element has a parent element that encloses it. Whatever styles are applied to that parent element can be applied to the elements enclosed in it if the properties are inherited</p>
     <ul class="build no-bullet">
         <li>
-            <pre><h6>This is a <em>Big</em> Headline</h6></pre>
+            <pre><code class="language-css"><h6>This is a <em>Big</em> Headline</h6></code></pre>
         </li>
         <li>The EM element is a child of the H1 element, and any styles on the H1 that are inherited will be passed on to the EM text as well. For example: h6 { color: red; }</li>
     </ul>
@@ -434,12 +397,12 @@ footer {
     <ul>
         <li>The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.</li>
         <li>
-            <pre>
+            <pre><code class="language-css">
 Margin - Clears an area around the border.
 Border - A border that goes around the padding and content.
 Padding - Clears an area around the content.
 Content - The content of the box, where text and images appear.
-</pre>
+</code></pre>
         </li>
         <li>*Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add the padding, borders and margins.</li>
     </ul>
@@ -482,14 +445,14 @@ Content - The content of the box, where text and images appear.
 
 <div class="slide">
     <h4>Example.</h4>
-<pre>
+<pre><code class="language-css">
 @media screen and (max-width: 480px) {
     .menu-bbq {
         width: 100%;
         float: left;
     }
 }
-</pre>
+</code></pre>
     <p>Targets all screens (including browser) that are smaller than 480px.</p>
     <p>Useful for phones or smaller tablets.</p>
     <p><strong>Normal css goes into any media query.  Anything you can use normally can be put in a media query!</strong></p>
@@ -503,7 +466,7 @@ Content - The content of the box, where text and images appear.
 
 <div class="slide">
     <h4>Example.</h4>
-    <pre>
+    <pre><code class="language-css">
 @media screen and (max-width: 874px) {
     /* Update global areas for smaller screens */
     h1 {
@@ -515,7 +478,7 @@ Content - The content of the box, where text and images appear.
         height: 0px;
     }
 }
-</pre>
+</code></pre>
     <p>In this case, we are just hiding the image since we have another logo.  You could also stretch the image to scale, or serve up a smaller background image specifically for smaller devices.</p>
 </div>
 
