@@ -83,29 +83,18 @@ h2 {
 h4 {
     color: blue;
 }
-    <h2>This will be red</h2>
-    <h4>This will be blue</h4>
-    <h2>This will also be red</h2>
-    <h4>This will also be blue</h4>
+&lt;h2&gt;This will be red&lt;/h2&gt;
+&lt;h4&gt;This will be blue&lt;/h4&gt;
+&lt;h2&gt;This will also be red&lt;/h2&gt;
+&lt;h4&gt;This will also be blue&lt;/h4&gt;
 </code></pre>
     <p>The above css would make the text of every h2 tag red and every h4 tag blue </p>
 </div>
 
-<div class="slide">
-    <h4>Tag</h4>
-    <pre><code class="language-css">
-h2 {
-    color: red;
-}
-h4 {
-    color: blue;
-}
-    </code></pre>
-    <small class="demo magenta">( demo )</small></div>
 
 <div class="slide">
     <h4>ID - <strong>#</strong></h4>
-    <p>Any html tag, can be given a unique id attribute. The id selector,<strong>#</strong>, is used to target an element with a specified id</p>
+    <p class="smaller">Any html tag, can be given a unique id attribute. The id selector,<strong>#</strong>, is used to target an element with a specified id</p>
     <pre><code class="language-css">
 #main-content {
     color: magenta;
@@ -114,14 +103,14 @@ h4 {
     color: green;
 }
 
-<div id="main-content">This text will be magenta</div>
-<h1 id="terms">This text will be green</h1>
+&lt;div id="main-content"&gt;This text will be magenta&lt;/div&gt;
+&lt;h1 id="terms"&gt;This text will be green&lt;/h1&gt;
     </code></pre>
     <small class="demo magenta">( demo )</small></div>
 
 <div class="slide">
     <h4>Class - <strong>.</strong></h4>
-    <p>Any html tag can be given a class attribute with multiple values non-unique values. The class selector,<span style="font-size: 40px;"><strong>.</strong></span>,is used to target all elements with a specified class</p>
+    <p class="smaller">Any html tag can be given a class attribute with multiple values non-unique values. The class selector,<span style="font-size: 40px;"><strong>.</strong></span>,is used to target all elements with a specified class</p>
     <pre><code class="language-css">
 .sub-header {
      font-size: 29px;
@@ -132,9 +121,9 @@ h4 {
 .big-text {
     font-size: 40px;
 }
-        <h2 class="sub-header">This text will be big</h2>
-        <p class="red-text">This text will be red</p>
-        <p class="red-text big-text">This text will be big AND red</p>
+        &lt;h2 class="sub-header"&gt;This text will be big&lt;/h2&gt;
+        &lt;p class="red-text"&gt;This text will be red&lt;/p&gt;
+        &lt;p class="red-text big-text"&gt;This text will be big AND red&lt;/p&gt;
     </code></pre>
 <small class="demo magenta">( demo )</small></div>
 
@@ -145,8 +134,8 @@ h4 {
 p[title] {
     color: blue
 }
-    <p>This text will be black</p>
-    <p title="brisket">This text will be blue</p>
+    &lt;p&gt;This text will be black&lt;/p&gt;
+    &lt;p title="brisket"&gt;This text will be blue&lt;/p&gt;
 </code></pre>
 </div>
 <div class="slide">
@@ -156,9 +145,9 @@ p[title] {
 p[title="waffles"] {
     color: blue
 }
-    <p>This text will be black</p>
-    <p title="brisket">This text will be black</p>
-    <p title="waffles">This text will be blue</p>
+    &lt;p&gt;This text will be black&lt;/p&gt;
+    &lt;p title="brisket"&gt;This text will be black&lt;/p&gt;
+    &lt;p title="waffles"&gt;This text will be blue&lt;/p&gt;
 </code></pre>
 </div>
 
@@ -169,9 +158,9 @@ p[title="waffles"] {
 p[title~="chicken"] {
     color: blue
 }
-    <p>This text will be black</p>
-    <p title="waffles">This text will be black</p>
-    <p title="waffles chicken">This text will be blue</p>
+    &lt;p&gt;This text will be black&lt;/p&gt;
+    &lt;p title="waffles"&gt;This text will be black&lt;/p&gt;
+    &lt;p title="waffles chicken"&gt;This text will be blue&lt;/p&gt;
 </code></pre>
 </div>
 
@@ -183,7 +172,7 @@ div[class="blue"] {
     color: blue;
 }
 </code></pre>
-    <p># and . are shorthands for these commonly used attributes.</p>
+    <p><strong># and . are shorthands for these commonly used attributes.</strong></p>
 </div>
 
 
@@ -207,14 +196,14 @@ div[class="blue"] {
 #address p .city {
     color: silver;
 }
-<div id="address" >
+&lt;div id="address" &gt;
     This text will be black
-    <p>
+    &lt;p&gt;
         This text will be black
-        <span class="city" >This text will be silver</span>
+        &lt;span class="city" &gt;This text will be silver&lt;/span&gt;
             This text will be black
-    </p>
-</div>
+    &lt;/p&gt;
+&lt;/div&gt;
     </code></pre>
 </div>
 <div class="slide">
@@ -223,16 +212,16 @@ div[class="blue"] {
 .pork li {
     color: salmon;
 }
-<div class="pork">
-    <ul>
-        <li>This text will be salmon</li>
-    </ul>
-</div>
-<div>
-    <ul>
-        <li>This text will be black</li>
-    </ul>
-</div>
+&lt;div class="pork"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;This text will be salmon&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;This text will be black&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
 </div>
 <!-- <div class="slide">
@@ -278,63 +267,7 @@ div[class="blue"] {
         </li>
     </ul>
 </div>
-
-        
-
-<div class="slide black">
-    <h1 class="white">CSS Properties</h1>
-</div>
-
-<div class="slide">
-  <h4>Including CSS - <small>External/Linked</small></h4>
-  <pre class="structure"><code class="language-markup">
-&lt;head>
-    ...
-    &lt;link rel="stylesheet" type="text/css" href="css/reset.css" />
-    &lt;link rel="stylesheet" type="text/css" href="css/global.css" />
-    ...
-&lt;/head>
-</code></pre>
-</div>
-
-<div class="slide">
-  <h4> CSS - <small>properties</small></h4>
-<pre><code class="language-css">
-header {
-    background-image: url('../images/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top left;
-    width: 1400px;
-    height: 777px;
-    margin: 0px auto;
-}</code></pre>
-  <ul class="build no-bullet">
-    <li style="list-style-type:none !important;"> 
-<pre class="build"><code class="language-css">
-header {
-    background: url('../images/header-bg.jpg') no-repeat top left;
-    width: 1400px;
-    height: 777px;
-}</code></pre>
-    </li>
-  </ul>
-<small class="demo magenta">( demo )</small></div>
-
-
-
-
-
-
-<div class="slide">
-<pre><code class="language-css">
-footer {
-    color: #d56161;
-    background: #bc0505;
-    padding: 15px 0;
-    font-size: 14px;
-}
-</code></pre>
-</div>        
+      
         <div class="slide section">
     <h4>CSS - float</h4>
     <ul>
