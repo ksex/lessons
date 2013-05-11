@@ -54,15 +54,31 @@ body {
   position: absolute;
   overflow: hidden;
 
+/* lets try percentages: 
+original content
+
   width: 900px;
   height: 700px;
+  margin-left: -450px;
+  margin-top: -350px;
+*/
+/* lets try percentages, new stuff */
+  width: 70%; 
+  height: 90%;
 
+  margin-left: -35%;
+  margin-top: -25%; 
+
+
+
+/* end experimentation */
+
+  
   left: 50%;
   top: 50%;
 
-  margin-left: -450px;
-  margin-top: -350px;
   
+   
   padding: 40px 60px;
 
   box-sizing: border-box;
@@ -428,7 +444,7 @@ pre {
   overflow-y: auto;
   overflow-x: auto;
   max-height: 400px;
-  
+  max-height: 85%;  
   white-space: pre-wrap
 }
 

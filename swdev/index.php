@@ -28,7 +28,7 @@
             <h1 class="thin-pink-bottom-border">
             Huge School
             </h1>
-            <p class="smaller">Web Dev for Software Devs.</p>
+            <p class="smaller">Web Dev for Tech Peeps.</p>
         </div>
                 
         <div class="slide magenta invert white-border">
