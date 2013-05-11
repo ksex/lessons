@@ -268,27 +268,6 @@ div[class="blue"] {
     </ul>
 </div>
       
-        <div class="slide section">
-    <h4>CSS - float</h4>
-    <ul>
-        <li>The <strong>float</strong> property is used to float an element to the left or right.</li>
-        <li>Subsequent elements wrap around the floating element.</li>
-    </ul>
-    <ul class="build">
-        <li>open <strong>float_lab.html</strong></li>
-    </ul>
-</div>
-
-
-
-<div class="slide">
-    <h4>float</h4>
-    <ul class="build">
-        <li>How to get block level elements to sit next to each other?</li>
-        <li>Float them!</li>
-    </ul>
-
-</div>        
 <div class="slide section">
     <h4>Inheritance</h4>
     <p>Each element in an HTML document is part of a tree, and every element except the initial <html> element has a parent element that encloses it. Whatever styles are applied to that parent element can be applied to the elements enclosed in it if the properties are inherited</p>
