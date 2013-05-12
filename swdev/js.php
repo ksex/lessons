@@ -522,9 +522,24 @@ btn.addEventListener('click', function(){
 
 <div class="slide">
 	<h4>Custom Events.</h4>
-	
+	<p>Custom events are useful for a variety of situations when the built-in DOM events cannot be leveraged for the desired functionality.</p>
+	<p>Common examples are logging for various user states.  A more complex common example is at the end of a video playing for the user, or at the end of a flow, etc.</p>
+	<p>Custom events are essentially the same as built in events, except that you can control the data sent with the event via the custom event interface.</p>
 </div>
 
+<div class="slide">
+	<h4>Example.</h4>
+<pre class="language-javascript">
+<code>
+window.addEventListener("myEvent", function(e) {
+    alert(e.detail);
+}, false);
 
+var e = document.createEvent("myEvent");
+e.initCustomEvent("myEvent", true, true, {});
+window.dispatchEvent(e);
+</code>
+</pre>
+</div>
 
 
