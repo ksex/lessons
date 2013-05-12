@@ -542,4 +542,27 @@ window.dispatchEvent(e);
 </pre>
 </div>
 
+<div class="slide">
+	<h4>What else?</h4>
+	<p>This course hasn't covered a variety of tools that developers prefer to use day to day.  After mastering the basics, it's highly recommended to check out these libraries and frameworks, which make coding a lot easier!</p>
+	<p>One thing to stress is that without a solid foundation, it can be really ahrd to debug using these tools.  There are plenty of resources for debugging such as <a href="http://stackoverflow.com">Stackoverflow</a>, but another good way to learn is to always use uncompressed and unminified source code for these things.</p>
+</div>
+
+<div class="slide">
+	<h4>CSS Stuff.</h4>
+	<ul class="build">
+		<li><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>.  Lots of great built ins for responsive too!</li>
+		<li><a href="http://sass-lang.com/">SASS</a>.  Syntactically awesome style sheets.  Works really great with the next one .. </li>
+		<li><a href="http://compass-style.org/">Compass</a>. Lots of good utilities in addition to basic SASS-syntax support.</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h4>Javascript Frameworks and libraries.</h4>
+	<ul class="build">
+		<li><a href="http://jquery.com/">jQuery</a>.  Just a library, but makes DOM interaction less painful.</li>
+		<li><a href="http://underscorejs.org/">Underscore</a>.  Just a library, but good for more data-driven uses vs pure DOM/UX goodness.</li>
+		<li><a href="http://angularjs.org/">Angular</a>.  Good all-around framework for simplifying and organizing hefty apps.</li>
+	</ul>
+</div>
 
