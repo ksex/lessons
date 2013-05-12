@@ -490,3 +490,41 @@ element.onclick = function () {
             </script>
             
         </div>
+
+<div class="slide black invert white-border">
+	<h1 class="v-center bigger white">Event Model.</h1>
+</div>
+
+<div class="slide">
+	<h4>Event listeners.</h4>
+	<p>The preferred way of registering event listeners in the DOM is to use <pre>element.addEventListener</pre>
+	This is similar to directly triggering via functions such as onclick(), but is a more modern and elegant solution.</p>
+<pre class="language-javascript">
+<code>
+var btn = document.getElementById('button');
+
+btn.addEventListener('click', function(){
+	console.log('Button clicked!');
+});
+</code>
+</pre>
+</div>
+
+<div class="slide">
+	<h4>Common listeners.</h4>
+	<p>It is very common to add event listeners to your page.  Some common listeners happen at:</p>
+	<ul class="build">
+		<li>Window.  For global events or things such as scrolling (window.scroll)</li>
+		<li>KeyboardEvent.  To listen for things such as blur or hitting enter (keydown 13.)</li>
+		<li>MouseEvent.  For mousing in or out of certain areas.</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h4>Custom Events.</h4>
+	
+</div>
+
+
+
+
